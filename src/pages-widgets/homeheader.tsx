@@ -46,7 +46,7 @@ function HomeHeader() {
       <div className='container-nav'>
         <a className="logo-custom navbar-brand logo-name d-flex align-items-center" href="#">
           <img
-            src="/public/logo.webp"
+            src="/dist/logo.webp"
             alt="Logo"
             width="60"
             height="60"
