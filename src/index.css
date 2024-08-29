@@ -8,14 +8,12 @@
 .btn-menu {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
-    /*color: ${(props) => (props.isSelected ? 'blue' : 'black')};
-    font-weight: ${(props) => (props.isSelected ? 'bold' : 'normal')};*/
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.btn-appointment-1, .btn-appointment-2 {
+.btn-appointment-1 {
     background-color: #c0392b;
     color: white;
     padding: 8px 10px;
@@ -25,6 +23,19 @@
     font-family: 'Lato', sans-serif;
     cursor: pointer;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.btn-appointment-2 {
+    background-color: #c0392b;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 12px;
+    border: none;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    margin: 0 20px;
 }
 
 .logo-custom  {
