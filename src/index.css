@@ -73,9 +73,64 @@
     padding: 10px 20px;
     font-size: 17px;
     font-family: 'Lato', sans-serif;
-    /*color: ${(props) => (props.isSelected ? 'blue' : 'black')};
-    font-weight: ${(props) => (props.isSelected ? 'bold' : 'normal')};*/
     cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    color: #ccc;
+}
+
+.footer-link {
+    color: #a0c4ff;
+    text-decoration: underline;
+    font-size: 12px;
+    display: block;
+    margin: 4px 0;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.footer-bottom hr {
+    border: 1px solid #555;
+    margin: 20px 0;
+}
+
+.fotter-in-page {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* Menu styles for smaller screens */

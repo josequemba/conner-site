@@ -7,11 +7,8 @@ function HomeHeader() {
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  let isSelected = false;
-
   const handleNavButtonClick = (index: any) => {
     setSelectedIndex(index);
-    isSelected = index === 2
   };
 
   const handleClickHumMenu = () => {
