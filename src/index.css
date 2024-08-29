@@ -14,7 +14,7 @@
 }
 
 .btn-appointment-1 {
-    background-color: #c0392b;
+    background-color: #8B0000;
     color: white;
     padding: 8px 10px;
     border-radius: 12px;
@@ -26,7 +26,7 @@
 }
 
 .btn-appointment-2 {
-    background-color: #c0392b;
+    background-color: #8B0000;
     color: white;
     padding: 8px 20px;
     border-radius: 12px;
@@ -144,10 +144,84 @@ footer {
     right: 0;
 }
 
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.body-container {
+    padding: 20px;
+}
+
+.body-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.car-image {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.car-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 35%;
+    text-align: center;
+}
+
+.text-section h1 {
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.book-button {
+    background-color: #8B0000;
+    padding: 8px 10px;
+    border-radius: 12px;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #A52A2A;
+}
+
 /* Menu styles for smaller screens */
 @media (max-width: 730px) {
     .ms-2{
         display: none;
+    }
+    /* BODY */
+    .content {
+        flex-direction: column;
+    }
+
+    .car-image, .text-section {
+        max-width: 100%;
     }
 }
 
