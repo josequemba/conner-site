@@ -10,9 +10,9 @@ function HomeBody () {
                     <p>Fast, reliable, and affordable car and air conditioning repairs you can trust. Keep your vehicle running smoothly with our expert service.</p>
                     <button className="book-button" onClick={()=>"handleBookNow()"}>Book Now</button>
                 </div>
-                
+
                 <div className="car-image">
-                    <img src="/public/car_d.png" alt="Car Image"/> 
+                    <img src="../car_d.png" alt="Car Image"/> 
                 </div>
                 
             </div>
