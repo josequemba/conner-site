@@ -3,6 +3,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .btn-menu {
@@ -148,6 +152,7 @@ footer {
 
 /* BODY */
 body {
+    padding-top: 40px;
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
@@ -244,6 +249,10 @@ body {
 
     .car-image img {
         max-width: 80%; /* Adjust the image size on smaller screens */
+    }
+
+    .container-nav{
+        background-color: #f7f7f7;
     }
 }
 
