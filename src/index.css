@@ -137,12 +137,12 @@ footer {
     margin: 20px 0;
 }
 
-.fotter-in-page {
+/* .fotter-in-page {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-}
+} */
 
 
 /* BODY */
@@ -156,17 +156,19 @@ body {
 }
 
 .body-content {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define two columns */
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* Add space between elements */
 }
 
 .car-image {
-    flex: 1;
-    max-width: 50%;
+    grid-column: 2 / 3; /* Car image in the second column */
+    max-width: 100%;
     text-align: center;
+    padding-left: 5%;
+    padding-right: 15%;
 }
 
 .car-image img {
@@ -176,9 +178,11 @@ body {
 }
 
 .text-section {
-    flex: 1;
-    max-width: 35%;
+    grid-column: 1 / 2; /* Text section in the first column */
+    max-width: 100%;
     text-align: center;
+    padding-left: 15%;
+    padding-right: 5%;
 }
 
 .text-section h1 {
@@ -201,7 +205,6 @@ body {
     border: none;
     color: #fff;
     font-size: 19px;
-    border: none;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -210,18 +213,36 @@ body {
     background-color: #A52A2A;
 }
 
+
 /* Menu styles for smaller screens */
 @media (max-width: 730px) {
     .ms-2{
         display: none;
     }
     /* BODY */
-    .content {
-        flex-direction: column;
+    .body-content {
+        grid-template-columns: 1fr; /* Switch to single column layout */
+        text-align: center; /* Center text for smaller screens */
     }
 
-    .car-image, .text-section {
-        max-width: 100%;
+    .car-image {
+        grid-column: 1 / -1; /* Span full width in single-column layout */
+        max-width: 80%; /* Adjust widths to fit smaller screens */
+        margin: 0 auto; /* Center content */
+        grid-row: 1/2;
+        padding: 0;
+    }
+
+    .text-section {
+        grid-column: 1 / -1; /* Span full width in single-column layout */
+        max-width: 80%; /* Adjust widths to fit smaller screens */
+        margin: 0 auto; /* Center content */
+        grid-row: 2/3;
+        padding: 0;
+    }
+
+    .car-image img {
+        max-width: 80%; /* Adjust the image size on smaller screens */
     }
 }
 
