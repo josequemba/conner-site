@@ -2,13 +2,18 @@ import { useState } from 'react';
 import '/src/index.css';
 import { useEffect } from 'react';
 
-function HomeHeader() {
+interface Props {
+  getPage (params: any): void;
+}
+
+function HomeHeader({getPage}: Props) {
   const menuOptions = ['Home', 'Services', 'About Us', 'Contact Us'];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleNavButtonClick = (index: any) => {
     setSelectedIndex(index);
+    getPage(index);
   };
 
   const handleClickHumMenu = () => {
@@ -51,8 +56,11 @@ function HomeHeader() {
             width="60"
             height="60"
             className="d-inline-block"
+            onClick={() => handleNavButtonClick(0)}
           />
-          <span className="ms-2">Utah PowerSport Pros</span>
+          <span className="ms-2" onClick={() => handleNavButtonClick(0)}>
+            Utah PowerSport Pros
+          </span>
         </a>
 
         <div className='menu-icon' onClick={handleClickHumMenu}>☰</div>
