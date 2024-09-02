@@ -7,6 +7,7 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color: #ffffff;
 }
 
 .btn-menu {
@@ -219,6 +220,87 @@ body {
     background-color: #A52A2A;
 }
 
+.spacer {
+    height: 4;
+}
+
+.spacer-container {
+    margin: 0;
+}
+
+/* progress stepper */
+.stepper-main {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.stepper-banner {
+    text-align: center;
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.stepper-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.stepper-description {
+    font-size: 14px;
+    color: #000;
+    margin: 20px 0;
+}
+
+.stepper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.step-icon {
+    font-size: 28px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 8px;
+    transition: all 0.3s;
+}
+
+.step-title {
+    font-size: 14px;
+    color: #000;
+}
+
+.step:hover .step-icon {
+    border-color: #ff5722;
+    color: #ff5722;
+    transform: scale(1.1);
+}
+
+.step.active .step-icon,
+.step.active .step-title {
+    color: #ff5722;
+    border-color: #ff5722;
+}
 
 /* Menu styles for smaller screens */
 @media (max-width: 730px) {

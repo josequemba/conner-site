@@ -48,7 +48,7 @@ function HomeHeader({getPage}: Props) {
 
   return (
     <>
-      <div className='container-nav'>
+      <nav className='container-nav'>
         <a className="logo-custom navbar-brand logo-name d-flex align-items-center" href="#">
           <img
             src="../logo.webp"
@@ -94,7 +94,7 @@ function HomeHeader({getPage}: Props) {
         </div>
         
   
-      </div>
+      </nav>
     </>
   );
 }

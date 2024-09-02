@@ -1,3 +1,4 @@
+import StepperProgress from "../components/stepper-progress";
 
 function HomeBody () {
     return <>
@@ -18,6 +19,7 @@ function HomeBody () {
             </div>
         </div>
     </body>
+    <StepperProgress />
     </>
 }
 
