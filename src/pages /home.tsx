@@ -3,7 +3,6 @@ import HomeBody from "../pages-widgets/homebody";
 import HomeFooter from "../pages-widgets/homefooter";
 import HomeHeader from "../pages-widgets/homeheader";
 import "/src/index.css";
-import StepperProgress from "../components/stepper-progress";
 
 function HomePage() {
   const [pageNumber, setPageNumber] = useState(0);
