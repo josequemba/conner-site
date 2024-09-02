@@ -4,52 +4,58 @@ import HomeFooter from "../pages-widgets/homefooter";
 import HomeHeader from "../pages-widgets/homeheader";
 import "/src/index.css";
 import ServicesBody from "../pages-widgets/servicesbody";
+import AboutUsBody from "../pages-widgets/aboutusbody";
+import ContactUsBody from "../pages-widgets/contactusbody";
 
 function HomePage() {
-  const [pageNumber, setPageNumber] = useState(0);
+  const [currentPage, setCurrentPage] = useState(0);
   const [realHeight, setRealHeight] = useState(window.innerHeight);
-
-  const screenHeight = window.screen.height;
-  console.log('Screen Height:', screenHeight);
-
-  const viewportHeight = window.innerHeight;
-  console.log('Viewport Height:', viewportHeight);
-
-  console.log('Rest of Height:', realHeight);
-
 
   useEffect(() => {
     const updateHeights = () => {
       const nav = document.querySelector('nav');
       const footer = document.querySelector('footer');
-      const navHeight = nav ? nav.offsetHeight : 80;
-      const footerHeight = footer ? footer.offsetHeight : 285;
+      const navHeight = nav ? nav.offsetHeight : 80; // Default value if nav is not available
+      const footerHeight = footer ? footer.offsetHeight : 285; // Default value if footer is not available
 
+      // Update the height considering nav and footer sizes
       setRealHeight(window.innerHeight - navHeight - footerHeight);
     };
 
-    // Update heights initially
+    // Initial height calculation
     updateHeights();
 
-    // Update heights on window resize
+    // Update on window resize
     window.addEventListener('resize', updateHeights);
     return () => window.removeEventListener('resize', updateHeights);
-  }, [pageNumber]); // Optionally include pageNumber if heights change based on pageNumber
+  }, []);
+
+  const renderPageContent = () => {
+    switch (currentPage) {
+      case 0:
+        return <HomeBody />;
+      case 1:
+        return <ServicesBody />;
+      case 2:
+        return <AboutUsBody />;
+      case 3:
+        return <ContactUsBody />;
+      default:
+        return <HomeBody />;
+    }
+  };
 
   return (
     <>
-      <HomeHeader getPage={(value) => setPageNumber(value)} />
+      <HomeHeader
+        getPage={(value) => {
+          setCurrentPage(value);
+        }}
+      />
 
-      {
-        pageNumber === 0 && <HomeBody /> 
-      }
+      {/* Render the content based on the current page */}
+      <div style={{ minHeight: realHeight }}>{renderPageContent()}</div>
 
-      {
-        pageNumber === 1 && <ServicesBody /> 
-
-        /* : <div style={{ height: realHeight }}></div> */
-      }
-    
       <span className="footer-in-page">
         <HomeFooter />
       </span>
