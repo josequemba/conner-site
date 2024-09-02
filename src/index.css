@@ -307,7 +307,7 @@ body {
 
 /* SERVICE BODY */
 .services-header {
-    background-color: #2f91ba;
+    background-color: #8B0000/* #2f91ba */;
     color: #fff;
     text-align: center;
     padding: 50px 20px;
@@ -381,7 +381,7 @@ body {
 /* Call to Action Section */
 .cta {
     padding: 50px 20px;
-    background-color: #2f91ba;
+    background-color: #8B0000/* #2f91ba */;
     color: #fff;
     text-align: center;
 }
