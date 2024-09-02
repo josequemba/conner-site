@@ -15,7 +15,7 @@ function HomePage() {
   const viewportHeight = window.innerHeight;
   console.log('Viewport Height:', viewportHeight);
 
-  console.log('Rest of Height:', realxHeight);
+  console.log('Rest of Height:', realHeight);
 
 
   useEffect(() => {
