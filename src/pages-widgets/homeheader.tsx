@@ -67,7 +67,7 @@ function HomeHeader({getPage}: Props) {
 
         <>
           {menuOptions.map((item, index) => (
-            <button className='btn-menu' style={{color: index === selectedIndex ? 'blue' : 'black'}}
+            <button className='btn-menu' style={{color: index === selectedIndex ? '#2f91ba' : 'black'}}
               key={index}
               onClick={() => handleNavButtonClick(index)}>
               {item}
@@ -81,7 +81,7 @@ function HomeHeader({getPage}: Props) {
         
         <div className='menu-bar'>
           {menuOptions.map((item, index) => (
-            <div className='hum-menu-item' style={{color: index === selectedIndex ? 'blue' : 'black'}}
+            <div className='hum-menu-item' style={{color: index === selectedIndex ? '#2f91ba' : 'black'}}
               key={index}
               onClick={() => handleNavButtonClick(index)}>
               {item}

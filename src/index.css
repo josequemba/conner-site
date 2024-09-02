@@ -284,6 +284,8 @@ body {
     padding: 10px;
     margin-bottom: 8px;
     transition: all 0.3s;
+    width: 60px;
+    height: 60px;
 }
 
 .step-title {
@@ -301,6 +303,116 @@ body {
 .step.active .step-title {
     color: #ff5722;
     border-color: #ff5722;
+}
+
+/* SERVICE BODY */
+.services-header {
+    background-color: #2f91ba;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.services-header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.service-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.service-item {
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.service-item p {
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+}
+
+.testimonial-item {
+    margin: 20px auto;
+    max-width: 500px;
+    font-style: italic;
+}
+
+/* Call to Action Section */
+.cta {
+    padding: 50px 20px;
+    background-color: #2f91ba;
+    color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: #f8f4f4;
+    color: black;
+    padding: 8px 10px;
+    border-radius: 12px;
+    border: none;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background: #b1b1b1;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
 
 /* Menu styles for smaller screens */
@@ -364,9 +476,9 @@ body {
     }
   }
   
-  /* Base styles for hidden elements */
-  .animated-element {
+/* Base styles for hidden elements */
+.animated-element {
     bottom: -100%; /* Start off-screen */
     animation: fadeInUp 0.4s forwards; /* Apply the slide-up animation */
-  }
+}
   

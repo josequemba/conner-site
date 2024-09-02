@@ -3,6 +3,7 @@ import HomeBody from "../pages-widgets/homebody";
 import HomeFooter from "../pages-widgets/homefooter";
 import HomeHeader from "../pages-widgets/homeheader";
 import "/src/index.css";
+import ServicesBody from "../pages-widgets/servicesbody";
 
 function HomePage() {
   const [pageNumber, setPageNumber] = useState(0);
@@ -38,10 +39,13 @@ console.log('Viewport Height:', viewportHeight);
       <HomeHeader getPage={(value) => setPageNumber(value)} />
 
       {
-        pageNumber === 0 
-        ? <HomeBody /> 
+        pageNumber === 0 && <HomeBody /> 
+      }
 
-        : <div style={{ height: realHeight }}></div>
+      {
+        pageNumber === 1 && <ServicesBody /> 
+
+        /* : <div style={{ height: realHeight }}></div> */
       }
     
       <span className="footer-in-page">
