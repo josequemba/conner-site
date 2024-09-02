@@ -4,12 +4,12 @@ function ServicesBody () {
     return <>
         <body>
             <div className="animated-element">
-                {/* <!-- Header Section --> */}
+                {/* Header Section */}
                 <header className="services-header">
                     <h1>Reliable Handy Repair Services</h1>
                     <p>Your trusted partner for all home repair needs.</p>
                 </header>
-                {/* <!-- Services Section --> */}
+                {/* Services Section */}
                 <section className="services">
                     <h2>Our Services</h2>
                     <div className="service-list">
@@ -35,7 +35,7 @@ function ServicesBody () {
                         </div>
                     </div>
                 </section>
-                {/* <!-- Testimonials Section --> */}
+                {/* Testimonials Section */}
                 <section className="testimonials">
                     <h2>What Our Clients Say</h2>
                     <div className="testimonial-item">
@@ -47,7 +47,7 @@ function ServicesBody () {
                         <span>- Jane Smith</span>
                     </div>
                 </section>
-                {/* <!-- Call to Action Section --> */}
+                {/* Call to Action Section */}
                 <section className="cta">
                     <h2>Ready to Get Started?</h2>
                     <p>Contact us today for a free quote on your next home repair project.</p>
