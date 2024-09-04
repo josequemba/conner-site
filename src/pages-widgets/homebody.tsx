@@ -8,12 +8,12 @@ function HomeBody () {
                     <div className="body-content">
                 
                         <div className="text-section">
-                            <h1>Expert Car & AC Repair Services</h1>
-                            <p>Fast, reliable, and affordable car and air conditioning repairs you can trust. Keep your vehicle running smoothly with our expert service.</p>
+                            <h1>UTV, ATV, Mechanical, and Home Repair Services</h1>
+                            <p>Get fast, reliable, and affordable ATV and UTV repairs you can trust. Our expert mobile on-site services bring tune-ups and repairs right to your location, keeping your off-road vehicles running smoothly without disrupting your adventures.</p>
                             <button className="book-button" onClick={()=>"handleBookNow()"}>Book Now</button>
                         </div>
                         <div className="car-image">
-                            <img src="../car_d.png" alt="Car Image"/>
+                            <img src="../utv.webp" alt="Car Image"/>
                         </div>
                 
                     </div>

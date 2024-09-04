@@ -5,7 +5,7 @@ function ContactUsBody () {
             <div className="animated-element">
                 {/* <!-- Header Section --> */}
                 <header className="contactus-header">
-                    <h1>Contact Handy Repair Services</h1>
+                    <h1>Contact Utah PowerSport Pros</h1>
                     <p>We’re here to help with all your repair needs. Get in touch today!</p>
                 </header>
                 {/* <!-- Contact Form Section --> */}
@@ -36,7 +36,7 @@ function ContactUsBody () {
                     <h2>Contact Information</h2>
                     <div className="contact-info">
                         <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                        <p><strong>Email:</strong> info@handyrepairservices.com</p>
+                        <p><strong>Email:</strong> info@utahpowersportpros.com</p>
                         <p><strong>Address:</strong> 123 Main Street, Hometown, USA</p>
                         <p><strong>Working Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM</p>
                     </div>

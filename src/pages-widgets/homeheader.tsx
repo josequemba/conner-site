@@ -9,9 +9,12 @@ interface Props {
 function HomeHeader({getPage}: Props) {
   const menuOptions = ['Home', 'Services', 'About Us', 'Contact Us'];
 
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const savedPage = parseInt(localStorage.getItem("currentPage") || "0");
+
+  const [selectedIndex, setSelectedIndex] = useState(savedPage);
 
   const handleNavButtonClick = (index: any) => {
+    localStorage.setItem("currentPage", `${index}`);
     setSelectedIndex(index);
     getPage(index);
   };

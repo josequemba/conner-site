@@ -5,14 +5,14 @@ function AboutUsBody () {
             <div className="animated-element">
                 {/* <!-- Header Section --> */}
                 <header className="aboutus-header">
-                    <h1>About Handy Repair Services</h1>
+                    <h1>About Utah PowerSport Pros</h1>
                     <p>Your trusted team for reliable and professional home repairs.</p>
                 </header>
                 
                            {/*  <!-- Company Overview Section --> */}
                 <section className="company-overview">
                     <h2>Who We Are</h2>
-                    <p>Handy Repair Services is a locally owned and operated company dedicated to providing top-notch repair and maintenance services for homes and businesses. With years of experience, our skilled team is committed to delivering quality workmanship and excellent customer service on every job.</p>
+                    <p>Utah PowerSport Pros is a locally owned and operated company dedicated to providing top-notch repair and maintenance services for homes and businesses. With years of experience, our skilled team is committed to delivering quality workmanship and excellent customer service on every job.</p>
                 </section>
                 {/* <!-- Mission Statement Section --> */}
                 <section className="mission">

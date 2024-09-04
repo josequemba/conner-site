@@ -652,6 +652,40 @@ body {
     overflow: hidden;
 }
 
+/* PRIVACY POLICY */
+.pp {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.pp h1 {
+    color: #333;
+}
+
+.pp h2 {
+    color: #555;
+}
+
+.pp p {
+    color: #666;
+}
+
+.container-pp {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pp a {
+    color: #007bff;
+    text-decoration: none;
+}
 
 /* Menu styles for smaller screens */
 @media (max-width: 730px) {

@@ -1,18 +1,22 @@
 import '/src/index.css';
 
-function HomeFooter () {
+interface Props {
+    footerLinks(params: any): void
+}
+
+function HomeFooter ({footerLinks}: Props) {
     return <footer>
         <div className="container">
             <div className="footer-section">
                 <h2>Utah PowerSport Pros</h2>
                 <p>© 2024 PowerSport Pros</p>
-                <a href="#" className="footer-link" onClick={()=>"handleLinkClick('privacy')"}>Privacy Policy</a>
+                <a href="#" className="footer-link" onClick={()=>{footerLinks(4); localStorage.setItem("currentPage", "4");}}>Privacy Policy</a>
             </div>
             <div className="footer-section">
                 <h2>Quick Links</h2>
-                <a href="#" className="footer-link" onClick={()=>"handleLinkClick('about')"}>About Us</a>
-                <a href="#" className="footer-link" onClick={()=>"handleLinkClick('services')"}>Services</a>
-                <a href="#" className="footer-link" onClick={()=>"handleLinkClick('contact')"}>Contact</a>
+                <a href="#" className="footer-link" onClick={()=>{footerLinks(2); localStorage.setItem("currentPage", "2"); location.reload();}}>About Us</a>
+                <a href="#" className="footer-link" onClick={()=>{footerLinks(1); localStorage.setItem("currentPage", "1"); location.reload();}}>Services</a>
+                <a href="#" className="footer-link" onClick={()=>{footerLinks(3); localStorage.setItem("currentPage", "3"); location.reload();}}>Contact</a>
             </div>
             <div className="footer-section">
                 <h2>Follow Us</h2>
